@@ -30,52 +30,53 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QLabel *label;
+    QLabel *label_13;
     QWidget *widget;
     QGridLayout *gridLayout;
-    QSlider *HW1_slider_5;
+    QSlider *HW5_slider;
     QLabel *label_7;
-    QSlider *HW1_slider_3;
+    QSlider *HW3_slider;
     QSpacerItem *verticalSpacer_3;
     QSlider *HW1_slider;
-    QSlider *HW1_slider_7;
+    QSlider *HW7_slider;
     QLabel *label_9;
     QLabel *label_3;
     QSpacerItem *verticalSpacer_5;
-    QSlider *HW1_slider_4;
+    QSlider *HW4_slider;
     QLabel *label_6;
-    QSlider *HW1_slider_2;
+    QSlider *HW2_slider;
     QLabel *label_2;
     QLabel *label_4;
     QSpacerItem *verticalSpacer_7;
-    QSlider *HW1_slider_6;
+    QSlider *HW6_slider;
     QLabel *label_8;
     QSpacerItem *verticalSpacer;
     QSpacerItem *verticalSpacer_4;
     QLabel *label_5;
     QSpacerItem *verticalSpacer_2;
-    QSlider *HW1_slider_8;
+    QSlider *HW8_slider;
     QSpacerItem *verticalSpacer_6;
     QSpinBox *HW1_spinbox;
-    QSpinBox *HW1_spinbox_2;
-    QSpinBox *HW1_spinbox_3;
-    QSpinBox *HW1_spinbox_4;
-    QSpinBox *HW1_spinbox_5;
-    QSpinBox *HW1_spinbox_6;
-    QSpinBox *HW1_spinbox_7;
-    QSpinBox *HW1_spinbox_8;
+    QSpinBox *HW2_spinbox;
+    QSpinBox *HW3_spinbox;
+    QSpinBox *HW4_spinbox;
+    QSpinBox *HW5_spinbox;
+    QSpinBox *HW6_spinbox;
+    QSpinBox *HW7_spinbox;
+    QSpinBox *HW8_spinbox;
     QWidget *widget1;
     QGridLayout *gridLayout_2;
     QLabel *label_10;
-    QSlider *horizontalSlider_3;
+    QSlider *Final_slider;
     QSpacerItem *verticalSpacer_9;
     QSpacerItem *verticalSpacer_8;
     QLabel *label_11;
     QLabel *label_12;
-    QSpinBox *spinBox_2;
-    QSlider *horizontalSlider_2;
-    QSlider *horizontalSlider;
-    QSpinBox *spinBox;
-    QSpinBox *spinBox_3;
+    QSpinBox *Midterm2_spinbox;
+    QSlider *Midterm2_slider;
+    QSlider *Midterm1_slider;
+    QSpinBox *Midterm1_spinbox;
+    QSpinBox *Final_spinbox;
     QMenuBar *menubar;
     QMenu *menuA_QT_grade_calculator;
     QStatusBar *statusbar;
@@ -96,6 +97,9 @@ public:
         font.setBold(false);
         font.setWeight(50);
         label->setFont(font);
+        label_13 = new QLabel(centralwidget);
+        label_13->setObjectName(QString::fromUtf8("label_13"));
+        label_13->setGeometry(QRect(340, 460, 221, 81));
         widget = new QWidget(centralwidget);
         widget->setObjectName(QString::fromUtf8("widget"));
         widget->setGeometry(QRect(20, 50, 191, 501));
@@ -106,13 +110,13 @@ public:
         gridLayout = new QGridLayout(widget);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
-        HW1_slider_5 = new QSlider(widget);
-        HW1_slider_5->setObjectName(QString::fromUtf8("HW1_slider_5"));
-        HW1_slider_5->setFont(font1);
-        HW1_slider_5->setMaximum(100);
-        HW1_slider_5->setOrientation(Qt::Horizontal);
+        HW5_slider = new QSlider(widget);
+        HW5_slider->setObjectName(QString::fromUtf8("HW5_slider"));
+        HW5_slider->setFont(font1);
+        HW5_slider->setMaximum(100);
+        HW5_slider->setOrientation(Qt::Horizontal);
 
-        gridLayout->addWidget(HW1_slider_5, 9, 1, 1, 1);
+        gridLayout->addWidget(HW5_slider, 9, 1, 1, 1);
 
         label_7 = new QLabel(widget);
         label_7->setObjectName(QString::fromUtf8("label_7"));
@@ -120,13 +124,13 @@ public:
 
         gridLayout->addWidget(label_7, 11, 0, 1, 1);
 
-        HW1_slider_3 = new QSlider(widget);
-        HW1_slider_3->setObjectName(QString::fromUtf8("HW1_slider_3"));
-        HW1_slider_3->setFont(font1);
-        HW1_slider_3->setMaximum(100);
-        HW1_slider_3->setOrientation(Qt::Horizontal);
+        HW3_slider = new QSlider(widget);
+        HW3_slider->setObjectName(QString::fromUtf8("HW3_slider"));
+        HW3_slider->setFont(font1);
+        HW3_slider->setMaximum(100);
+        HW3_slider->setOrientation(Qt::Horizontal);
 
-        gridLayout->addWidget(HW1_slider_3, 5, 1, 1, 1);
+        gridLayout->addWidget(HW3_slider, 5, 1, 1, 1);
 
         verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
@@ -140,13 +144,13 @@ public:
 
         gridLayout->addWidget(HW1_slider, 0, 1, 1, 1);
 
-        HW1_slider_7 = new QSlider(widget);
-        HW1_slider_7->setObjectName(QString::fromUtf8("HW1_slider_7"));
-        HW1_slider_7->setFont(font1);
-        HW1_slider_7->setMaximum(100);
-        HW1_slider_7->setOrientation(Qt::Horizontal);
+        HW7_slider = new QSlider(widget);
+        HW7_slider->setObjectName(QString::fromUtf8("HW7_slider"));
+        HW7_slider->setFont(font1);
+        HW7_slider->setMaximum(100);
+        HW7_slider->setOrientation(Qt::Horizontal);
 
-        gridLayout->addWidget(HW1_slider_7, 13, 1, 1, 1);
+        gridLayout->addWidget(HW7_slider, 13, 1, 1, 1);
 
         label_9 = new QLabel(widget);
         label_9->setObjectName(QString::fromUtf8("label_9"));
@@ -164,13 +168,13 @@ public:
 
         gridLayout->addItem(verticalSpacer_5, 10, 1, 1, 1);
 
-        HW1_slider_4 = new QSlider(widget);
-        HW1_slider_4->setObjectName(QString::fromUtf8("HW1_slider_4"));
-        HW1_slider_4->setFont(font1);
-        HW1_slider_4->setMaximum(100);
-        HW1_slider_4->setOrientation(Qt::Horizontal);
+        HW4_slider = new QSlider(widget);
+        HW4_slider->setObjectName(QString::fromUtf8("HW4_slider"));
+        HW4_slider->setFont(font1);
+        HW4_slider->setMaximum(100);
+        HW4_slider->setOrientation(Qt::Horizontal);
 
-        gridLayout->addWidget(HW1_slider_4, 7, 1, 1, 1);
+        gridLayout->addWidget(HW4_slider, 7, 1, 1, 1);
 
         label_6 = new QLabel(widget);
         label_6->setObjectName(QString::fromUtf8("label_6"));
@@ -178,13 +182,13 @@ public:
 
         gridLayout->addWidget(label_6, 9, 0, 1, 1);
 
-        HW1_slider_2 = new QSlider(widget);
-        HW1_slider_2->setObjectName(QString::fromUtf8("HW1_slider_2"));
-        HW1_slider_2->setFont(font1);
-        HW1_slider_2->setMaximum(100);
-        HW1_slider_2->setOrientation(Qt::Horizontal);
+        HW2_slider = new QSlider(widget);
+        HW2_slider->setObjectName(QString::fromUtf8("HW2_slider"));
+        HW2_slider->setFont(font1);
+        HW2_slider->setMaximum(100);
+        HW2_slider->setOrientation(Qt::Horizontal);
 
-        gridLayout->addWidget(HW1_slider_2, 3, 1, 1, 1);
+        gridLayout->addWidget(HW2_slider, 3, 1, 1, 1);
 
         label_2 = new QLabel(widget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
@@ -202,13 +206,13 @@ public:
 
         gridLayout->addItem(verticalSpacer_7, 14, 1, 1, 1);
 
-        HW1_slider_6 = new QSlider(widget);
-        HW1_slider_6->setObjectName(QString::fromUtf8("HW1_slider_6"));
-        HW1_slider_6->setFont(font1);
-        HW1_slider_6->setMaximum(100);
-        HW1_slider_6->setOrientation(Qt::Horizontal);
+        HW6_slider = new QSlider(widget);
+        HW6_slider->setObjectName(QString::fromUtf8("HW6_slider"));
+        HW6_slider->setFont(font1);
+        HW6_slider->setMaximum(100);
+        HW6_slider->setOrientation(Qt::Horizontal);
 
-        gridLayout->addWidget(HW1_slider_6, 11, 1, 1, 1);
+        gridLayout->addWidget(HW6_slider, 11, 1, 1, 1);
 
         label_8 = new QLabel(widget);
         label_8->setObjectName(QString::fromUtf8("label_8"));
@@ -234,13 +238,13 @@ public:
 
         gridLayout->addItem(verticalSpacer_2, 4, 1, 1, 1);
 
-        HW1_slider_8 = new QSlider(widget);
-        HW1_slider_8->setObjectName(QString::fromUtf8("HW1_slider_8"));
-        HW1_slider_8->setFont(font1);
-        HW1_slider_8->setMaximum(100);
-        HW1_slider_8->setOrientation(Qt::Horizontal);
+        HW8_slider = new QSlider(widget);
+        HW8_slider->setObjectName(QString::fromUtf8("HW8_slider"));
+        HW8_slider->setFont(font1);
+        HW8_slider->setMaximum(100);
+        HW8_slider->setOrientation(Qt::Horizontal);
 
-        gridLayout->addWidget(HW1_slider_8, 15, 1, 1, 1);
+        gridLayout->addWidget(HW8_slider, 15, 1, 1, 1);
 
         verticalSpacer_6 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
@@ -253,54 +257,54 @@ public:
 
         gridLayout->addWidget(HW1_spinbox, 0, 2, 1, 1);
 
-        HW1_spinbox_2 = new QSpinBox(widget);
-        HW1_spinbox_2->setObjectName(QString::fromUtf8("HW1_spinbox_2"));
-        HW1_spinbox_2->setFont(font1);
-        HW1_spinbox_2->setMaximum(100);
+        HW2_spinbox = new QSpinBox(widget);
+        HW2_spinbox->setObjectName(QString::fromUtf8("HW2_spinbox"));
+        HW2_spinbox->setFont(font1);
+        HW2_spinbox->setMaximum(100);
 
-        gridLayout->addWidget(HW1_spinbox_2, 3, 2, 1, 1);
+        gridLayout->addWidget(HW2_spinbox, 3, 2, 1, 1);
 
-        HW1_spinbox_3 = new QSpinBox(widget);
-        HW1_spinbox_3->setObjectName(QString::fromUtf8("HW1_spinbox_3"));
-        HW1_spinbox_3->setFont(font1);
-        HW1_spinbox_3->setMaximum(100);
+        HW3_spinbox = new QSpinBox(widget);
+        HW3_spinbox->setObjectName(QString::fromUtf8("HW3_spinbox"));
+        HW3_spinbox->setFont(font1);
+        HW3_spinbox->setMaximum(100);
 
-        gridLayout->addWidget(HW1_spinbox_3, 5, 2, 1, 1);
+        gridLayout->addWidget(HW3_spinbox, 5, 2, 1, 1);
 
-        HW1_spinbox_4 = new QSpinBox(widget);
-        HW1_spinbox_4->setObjectName(QString::fromUtf8("HW1_spinbox_4"));
-        HW1_spinbox_4->setFont(font1);
-        HW1_spinbox_4->setMaximum(100);
+        HW4_spinbox = new QSpinBox(widget);
+        HW4_spinbox->setObjectName(QString::fromUtf8("HW4_spinbox"));
+        HW4_spinbox->setFont(font1);
+        HW4_spinbox->setMaximum(100);
 
-        gridLayout->addWidget(HW1_spinbox_4, 7, 2, 1, 1);
+        gridLayout->addWidget(HW4_spinbox, 7, 2, 1, 1);
 
-        HW1_spinbox_5 = new QSpinBox(widget);
-        HW1_spinbox_5->setObjectName(QString::fromUtf8("HW1_spinbox_5"));
-        HW1_spinbox_5->setFont(font1);
-        HW1_spinbox_5->setMaximum(100);
+        HW5_spinbox = new QSpinBox(widget);
+        HW5_spinbox->setObjectName(QString::fromUtf8("HW5_spinbox"));
+        HW5_spinbox->setFont(font1);
+        HW5_spinbox->setMaximum(100);
 
-        gridLayout->addWidget(HW1_spinbox_5, 9, 2, 1, 1);
+        gridLayout->addWidget(HW5_spinbox, 9, 2, 1, 1);
 
-        HW1_spinbox_6 = new QSpinBox(widget);
-        HW1_spinbox_6->setObjectName(QString::fromUtf8("HW1_spinbox_6"));
-        HW1_spinbox_6->setFont(font1);
-        HW1_spinbox_6->setMaximum(100);
+        HW6_spinbox = new QSpinBox(widget);
+        HW6_spinbox->setObjectName(QString::fromUtf8("HW6_spinbox"));
+        HW6_spinbox->setFont(font1);
+        HW6_spinbox->setMaximum(100);
 
-        gridLayout->addWidget(HW1_spinbox_6, 11, 2, 1, 1);
+        gridLayout->addWidget(HW6_spinbox, 11, 2, 1, 1);
 
-        HW1_spinbox_7 = new QSpinBox(widget);
-        HW1_spinbox_7->setObjectName(QString::fromUtf8("HW1_spinbox_7"));
-        HW1_spinbox_7->setFont(font1);
-        HW1_spinbox_7->setMaximum(100);
+        HW7_spinbox = new QSpinBox(widget);
+        HW7_spinbox->setObjectName(QString::fromUtf8("HW7_spinbox"));
+        HW7_spinbox->setFont(font1);
+        HW7_spinbox->setMaximum(100);
 
-        gridLayout->addWidget(HW1_spinbox_7, 13, 2, 1, 1);
+        gridLayout->addWidget(HW7_spinbox, 13, 2, 1, 1);
 
-        HW1_spinbox_8 = new QSpinBox(widget);
-        HW1_spinbox_8->setObjectName(QString::fromUtf8("HW1_spinbox_8"));
-        HW1_spinbox_8->setFont(font1);
-        HW1_spinbox_8->setMaximum(100);
+        HW8_spinbox = new QSpinBox(widget);
+        HW8_spinbox->setObjectName(QString::fromUtf8("HW8_spinbox"));
+        HW8_spinbox->setFont(font1);
+        HW8_spinbox->setMaximum(100);
 
-        gridLayout->addWidget(HW1_spinbox_8, 15, 2, 1, 1);
+        gridLayout->addWidget(HW8_spinbox, 15, 2, 1, 1);
 
         widget1 = new QWidget(centralwidget);
         widget1->setObjectName(QString::fromUtf8("widget1"));
@@ -314,13 +318,13 @@ public:
 
         gridLayout_2->addWidget(label_10, 0, 0, 1, 1);
 
-        horizontalSlider_3 = new QSlider(widget1);
-        horizontalSlider_3->setObjectName(QString::fromUtf8("horizontalSlider_3"));
-        horizontalSlider_3->setFont(font1);
-        horizontalSlider_3->setMaximum(100);
-        horizontalSlider_3->setOrientation(Qt::Horizontal);
+        Final_slider = new QSlider(widget1);
+        Final_slider->setObjectName(QString::fromUtf8("Final_slider"));
+        Final_slider->setFont(font1);
+        Final_slider->setMaximum(100);
+        Final_slider->setOrientation(Qt::Horizontal);
 
-        gridLayout_2->addWidget(horizontalSlider_3, 9, 0, 1, 1);
+        gridLayout_2->addWidget(Final_slider, 9, 0, 1, 1);
 
         verticalSpacer_9 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
@@ -342,39 +346,39 @@ public:
 
         gridLayout_2->addWidget(label_12, 8, 0, 1, 1);
 
-        spinBox_2 = new QSpinBox(widget1);
-        spinBox_2->setObjectName(QString::fromUtf8("spinBox_2"));
-        spinBox_2->setMaximum(100);
+        Midterm2_spinbox = new QSpinBox(widget1);
+        Midterm2_spinbox->setObjectName(QString::fromUtf8("Midterm2_spinbox"));
+        Midterm2_spinbox->setMaximum(100);
 
-        gridLayout_2->addWidget(spinBox_2, 6, 0, 1, 1);
+        gridLayout_2->addWidget(Midterm2_spinbox, 6, 0, 1, 1);
 
-        horizontalSlider_2 = new QSlider(widget1);
-        horizontalSlider_2->setObjectName(QString::fromUtf8("horizontalSlider_2"));
-        horizontalSlider_2->setFont(font1);
-        horizontalSlider_2->setMaximum(100);
-        horizontalSlider_2->setOrientation(Qt::Horizontal);
+        Midterm2_slider = new QSlider(widget1);
+        Midterm2_slider->setObjectName(QString::fromUtf8("Midterm2_slider"));
+        Midterm2_slider->setFont(font1);
+        Midterm2_slider->setMaximum(100);
+        Midterm2_slider->setOrientation(Qt::Horizontal);
 
-        gridLayout_2->addWidget(horizontalSlider_2, 5, 0, 1, 1);
+        gridLayout_2->addWidget(Midterm2_slider, 5, 0, 1, 1);
 
-        horizontalSlider = new QSlider(widget1);
-        horizontalSlider->setObjectName(QString::fromUtf8("horizontalSlider"));
-        horizontalSlider->setFont(font1);
-        horizontalSlider->setMaximum(100);
-        horizontalSlider->setOrientation(Qt::Horizontal);
+        Midterm1_slider = new QSlider(widget1);
+        Midterm1_slider->setObjectName(QString::fromUtf8("Midterm1_slider"));
+        Midterm1_slider->setFont(font1);
+        Midterm1_slider->setMaximum(100);
+        Midterm1_slider->setOrientation(Qt::Horizontal);
 
-        gridLayout_2->addWidget(horizontalSlider, 1, 0, 1, 1);
+        gridLayout_2->addWidget(Midterm1_slider, 1, 0, 1, 1);
 
-        spinBox = new QSpinBox(widget1);
-        spinBox->setObjectName(QString::fromUtf8("spinBox"));
-        spinBox->setMaximum(100);
+        Midterm1_spinbox = new QSpinBox(widget1);
+        Midterm1_spinbox->setObjectName(QString::fromUtf8("Midterm1_spinbox"));
+        Midterm1_spinbox->setMaximum(100);
 
-        gridLayout_2->addWidget(spinBox, 2, 0, 1, 1);
+        gridLayout_2->addWidget(Midterm1_spinbox, 2, 0, 1, 1);
 
-        spinBox_3 = new QSpinBox(widget1);
-        spinBox_3->setObjectName(QString::fromUtf8("spinBox_3"));
-        spinBox_3->setMaximum(100);
+        Final_spinbox = new QSpinBox(widget1);
+        Final_spinbox->setObjectName(QString::fromUtf8("Final_spinbox"));
+        Final_spinbox->setMaximum(100);
 
-        gridLayout_2->addWidget(spinBox_3, 10, 0, 1, 1);
+        gridLayout_2->addWidget(Final_spinbox, 10, 0, 1, 1);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
@@ -392,27 +396,27 @@ public:
         retranslateUi(MainWindow);
         QObject::connect(HW1_slider, SIGNAL(valueChanged(int)), HW1_spinbox, SLOT(setValue(int)));
         QObject::connect(HW1_spinbox, SIGNAL(valueChanged(int)), HW1_slider, SLOT(setValue(int)));
-        QObject::connect(HW1_slider_2, SIGNAL(valueChanged(int)), HW1_spinbox_2, SLOT(setValue(int)));
-        QObject::connect(HW1_slider_3, SIGNAL(valueChanged(int)), HW1_spinbox_3, SLOT(setValue(int)));
-        QObject::connect(HW1_slider_4, SIGNAL(valueChanged(int)), HW1_spinbox_4, SLOT(setValue(int)));
-        QObject::connect(HW1_slider_5, SIGNAL(valueChanged(int)), HW1_spinbox_5, SLOT(setValue(int)));
-        QObject::connect(HW1_slider_6, SIGNAL(valueChanged(int)), HW1_spinbox_6, SLOT(setValue(int)));
-        QObject::connect(HW1_slider_7, SIGNAL(valueChanged(int)), HW1_spinbox_7, SLOT(setValue(int)));
-        QObject::connect(HW1_slider_8, SIGNAL(valueChanged(int)), HW1_spinbox_8, SLOT(setValue(int)));
-        QObject::connect(HW1_spinbox_8, SIGNAL(valueChanged(int)), HW1_slider_8, SLOT(setValue(int)));
-        QObject::connect(HW1_spinbox_7, SIGNAL(valueChanged(int)), HW1_slider_7, SLOT(setValue(int)));
-        QObject::connect(HW1_spinbox_6, SIGNAL(valueChanged(int)), HW1_slider_6, SLOT(setValue(int)));
-        QObject::connect(HW1_spinbox_5, SIGNAL(valueChanged(int)), HW1_slider_5, SLOT(setValue(int)));
-        QObject::connect(HW1_spinbox_4, SIGNAL(valueChanged(int)), HW1_slider_4, SLOT(setValue(int)));
-        QObject::connect(HW1_spinbox_3, SIGNAL(valueChanged(int)), HW1_slider_3, SLOT(setValue(int)));
-        QObject::connect(HW1_spinbox_2, SIGNAL(valueChanged(int)), HW1_slider_2, SLOT(setValue(int)));
+        QObject::connect(HW2_slider, SIGNAL(valueChanged(int)), HW2_spinbox, SLOT(setValue(int)));
+        QObject::connect(HW3_slider, SIGNAL(valueChanged(int)), HW3_spinbox, SLOT(setValue(int)));
+        QObject::connect(HW4_slider, SIGNAL(valueChanged(int)), HW4_spinbox, SLOT(setValue(int)));
+        QObject::connect(HW5_slider, SIGNAL(valueChanged(int)), HW5_spinbox, SLOT(setValue(int)));
+        QObject::connect(HW6_slider, SIGNAL(valueChanged(int)), HW6_spinbox, SLOT(setValue(int)));
+        QObject::connect(HW7_slider, SIGNAL(valueChanged(int)), HW7_spinbox, SLOT(setValue(int)));
+        QObject::connect(HW8_slider, SIGNAL(valueChanged(int)), HW8_spinbox, SLOT(setValue(int)));
+        QObject::connect(HW8_spinbox, SIGNAL(valueChanged(int)), HW8_slider, SLOT(setValue(int)));
+        QObject::connect(HW7_spinbox, SIGNAL(valueChanged(int)), HW7_slider, SLOT(setValue(int)));
+        QObject::connect(HW6_spinbox, SIGNAL(valueChanged(int)), HW6_slider, SLOT(setValue(int)));
+        QObject::connect(HW5_spinbox, SIGNAL(valueChanged(int)), HW5_slider, SLOT(setValue(int)));
+        QObject::connect(HW4_spinbox, SIGNAL(valueChanged(int)), HW4_slider, SLOT(setValue(int)));
+        QObject::connect(HW3_spinbox, SIGNAL(valueChanged(int)), HW3_slider, SLOT(setValue(int)));
+        QObject::connect(HW2_spinbox, SIGNAL(valueChanged(int)), HW2_slider, SLOT(setValue(int)));
         QObject::connect(HW1_spinbox, SIGNAL(valueChanged(int)), HW1_slider, SLOT(setValue(int)));
-        QObject::connect(horizontalSlider, SIGNAL(valueChanged(int)), spinBox, SLOT(setValue(int)));
-        QObject::connect(horizontalSlider_2, SIGNAL(valueChanged(int)), spinBox_2, SLOT(setValue(int)));
-        QObject::connect(horizontalSlider_3, SIGNAL(valueChanged(int)), spinBox_3, SLOT(setValue(int)));
-        QObject::connect(spinBox_3, SIGNAL(valueChanged(int)), horizontalSlider_3, SLOT(setValue(int)));
-        QObject::connect(spinBox_2, SIGNAL(valueChanged(int)), horizontalSlider_2, SLOT(setValue(int)));
-        QObject::connect(spinBox, SIGNAL(valueChanged(int)), horizontalSlider, SLOT(setValue(int)));
+        QObject::connect(Midterm1_slider, SIGNAL(valueChanged(int)), Midterm1_spinbox, SLOT(setValue(int)));
+        QObject::connect(Midterm2_slider, SIGNAL(valueChanged(int)), Midterm2_spinbox, SLOT(setValue(int)));
+        QObject::connect(Final_slider, SIGNAL(valueChanged(int)), Final_spinbox, SLOT(setValue(int)));
+        QObject::connect(Final_spinbox, SIGNAL(valueChanged(int)), Final_slider, SLOT(setValue(int)));
+        QObject::connect(Midterm2_spinbox, SIGNAL(valueChanged(int)), Midterm2_slider, SLOT(setValue(int)));
+        QObject::connect(Midterm1_spinbox, SIGNAL(valueChanged(int)), Midterm1_slider, SLOT(setValue(int)));
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
@@ -421,6 +425,7 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p align=\"center\">This is a QT grade calculator</p></body></html>", nullptr));
+        label_13->setText(QString());
         label_7->setText(QCoreApplication::translate("MainWindow", "HW 6", nullptr));
         label_9->setText(QCoreApplication::translate("MainWindow", "HW 8", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "HW 2", nullptr));
