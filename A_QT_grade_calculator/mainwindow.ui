@@ -52,7 +52,7 @@
     </property>
     <layout class="QGridLayout" name="gridLayout">
      <item row="9" column="1">
-      <widget class="QSlider" name="HW1_slider_5">
+      <widget class="QSlider" name="HW5_slider">
        <property name="font">
         <font>
          <family>Courier New</family>
@@ -81,7 +81,7 @@
       </widget>
      </item>
      <item row="5" column="1">
-      <widget class="QSlider" name="HW1_slider_3">
+      <widget class="QSlider" name="HW3_slider">
        <property name="font">
         <font>
          <family>Courier New</family>
@@ -132,7 +132,7 @@
       </widget>
      </item>
      <item row="13" column="1">
-      <widget class="QSlider" name="HW1_slider_7">
+      <widget class="QSlider" name="HW7_slider">
        <property name="font">
         <font>
          <family>Courier New</family>
@@ -193,7 +193,7 @@
       </spacer>
      </item>
      <item row="7" column="1">
-      <widget class="QSlider" name="HW1_slider_4">
+      <widget class="QSlider" name="HW4_slider">
        <property name="font">
         <font>
          <family>Courier New</family>
@@ -222,7 +222,7 @@
       </widget>
      </item>
      <item row="3" column="1">
-      <widget class="QSlider" name="HW1_slider_2">
+      <widget class="QSlider" name="HW2_slider">
        <property name="font">
         <font>
          <family>Courier New</family>
@@ -283,7 +283,7 @@
       </spacer>
      </item>
      <item row="11" column="1">
-      <widget class="QSlider" name="HW1_slider_6">
+      <widget class="QSlider" name="HW6_slider">
        <property name="font">
         <font>
          <family>Courier New</family>
@@ -382,7 +382,7 @@
       </spacer>
      </item>
      <item row="15" column="1">
-      <widget class="QSlider" name="HW1_slider_8">
+      <widget class="QSlider" name="HW8_slider">
        <property name="font">
         <font>
          <family>Courier New</family>
@@ -430,7 +430,7 @@
       </widget>
      </item>
      <item row="3" column="2">
-      <widget class="QSpinBox" name="HW1_spinbox_2">
+      <widget class="QSpinBox" name="HW2_spinbox">
        <property name="font">
         <font>
          <family>Courier New</family>
@@ -443,7 +443,7 @@
       </widget>
      </item>
      <item row="5" column="2">
-      <widget class="QSpinBox" name="HW1_spinbox_3">
+      <widget class="QSpinBox" name="HW3_spinbox">
        <property name="font">
         <font>
          <family>Courier New</family>
@@ -456,7 +456,7 @@
       </widget>
      </item>
      <item row="7" column="2">
-      <widget class="QSpinBox" name="HW1_spinbox_4">
+      <widget class="QSpinBox" name="HW4_spinbox">
        <property name="font">
         <font>
          <family>Courier New</family>
@@ -469,7 +469,7 @@
       </widget>
      </item>
      <item row="9" column="2">
-      <widget class="QSpinBox" name="HW1_spinbox_5">
+      <widget class="QSpinBox" name="HW5_spinbox">
        <property name="font">
         <font>
          <family>Courier New</family>
@@ -482,7 +482,7 @@
       </widget>
      </item>
      <item row="11" column="2">
-      <widget class="QSpinBox" name="HW1_spinbox_6">
+      <widget class="QSpinBox" name="HW6_spinbox">
        <property name="font">
         <font>
          <family>Courier New</family>
@@ -495,7 +495,7 @@
       </widget>
      </item>
      <item row="13" column="2">
-      <widget class="QSpinBox" name="HW1_spinbox_7">
+      <widget class="QSpinBox" name="HW7_spinbox">
        <property name="font">
         <font>
          <family>Courier New</family>
@@ -508,7 +508,7 @@
       </widget>
      </item>
      <item row="15" column="2">
-      <widget class="QSpinBox" name="HW1_spinbox_8">
+      <widget class="QSpinBox" name="HW8_spinbox">
        <property name="font">
         <font>
          <family>Courier New</family>
@@ -546,7 +546,7 @@
       </widget>
      </item>
      <item row="9" column="0">
-      <widget class="QSlider" name="horizontalSlider_3">
+      <widget class="QSlider" name="Final_slider">
        <property name="font">
         <font>
          <family>Courier New</family>
@@ -614,14 +614,14 @@
       </widget>
      </item>
      <item row="6" column="0">
-      <widget class="QSpinBox" name="spinBox_2">
+      <widget class="QSpinBox" name="Midterm2_spinbox">
        <property name="maximum">
         <number>100</number>
        </property>
       </widget>
      </item>
      <item row="5" column="0">
-      <widget class="QSlider" name="horizontalSlider_2">
+      <widget class="QSlider" name="Midterm2_slider">
        <property name="font">
         <font>
          <family>Courier New</family>
@@ -637,7 +637,7 @@
       </widget>
      </item>
      <item row="1" column="0">
-      <widget class="QSlider" name="horizontalSlider">
+      <widget class="QSlider" name="Midterm1_slider">
        <property name="font">
         <font>
          <family>Courier New</family>
@@ -653,14 +653,14 @@
       </widget>
      </item>
      <item row="2" column="0">
-      <widget class="QSpinBox" name="spinBox">
+      <widget class="QSpinBox" name="Midterm1_spinbox">
        <property name="maximum">
         <number>100</number>
        </property>
       </widget>
      </item>
      <item row="10" column="0">
-      <widget class="QSpinBox" name="spinBox_3">
+      <widget class="QSpinBox" name="Final_spinbox">
        <property name="maximum">
         <number>100</number>
        </property>
@@ -722,9 +722,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>HW1_slider_2</sender>
+   <sender>HW2_slider</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>HW1_spinbox_2</receiver>
+   <receiver>HW2_spinbox</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -738,9 +738,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>HW1_slider_3</sender>
+   <sender>HW3_slider</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>HW1_spinbox_3</receiver>
+   <receiver>HW3_spinbox</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -754,9 +754,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>HW1_slider_4</sender>
+   <sender>HW4_slider</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>HW1_spinbox_4</receiver>
+   <receiver>HW4_spinbox</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -770,9 +770,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>HW1_slider_5</sender>
+   <sender>HW5_slider</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>HW1_spinbox_5</receiver>
+   <receiver>HW5_spinbox</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -786,9 +786,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>HW1_slider_6</sender>
+   <sender>HW6_slider</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>HW1_spinbox_6</receiver>
+   <receiver>HW6_spinbox</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -802,9 +802,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>HW1_slider_7</sender>
+   <sender>HW7_slider</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>HW1_spinbox_7</receiver>
+   <receiver>HW7_spinbox</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -818,9 +818,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>HW1_slider_8</sender>
+   <sender>HW8_slider</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>HW1_spinbox_8</receiver>
+   <receiver>HW8_spinbox</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -834,9 +834,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>HW1_spinbox_8</sender>
+   <sender>HW8_spinbox</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>HW1_slider_8</receiver>
+   <receiver>HW8_slider</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -850,9 +850,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>HW1_spinbox_7</sender>
+   <sender>HW7_spinbox</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>HW1_slider_7</receiver>
+   <receiver>HW7_slider</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -866,9 +866,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>HW1_spinbox_6</sender>
+   <sender>HW6_spinbox</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>HW1_slider_6</receiver>
+   <receiver>HW6_slider</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -882,9 +882,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>HW1_spinbox_5</sender>
+   <sender>HW5_spinbox</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>HW1_slider_5</receiver>
+   <receiver>HW5_slider</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -898,9 +898,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>HW1_spinbox_4</sender>
+   <sender>HW4_spinbox</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>HW1_slider_4</receiver>
+   <receiver>HW4_slider</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -914,9 +914,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>HW1_spinbox_3</sender>
+   <sender>HW3_spinbox</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>HW1_slider_3</receiver>
+   <receiver>HW3_slider</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -930,9 +930,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>HW1_spinbox_2</sender>
+   <sender>HW2_spinbox</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>HW1_slider_2</receiver>
+   <receiver>HW2_slider</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -962,9 +962,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>horizontalSlider</sender>
+   <sender>Midterm1_slider</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>spinBox</receiver>
+   <receiver>Midterm1_spinbox</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -978,9 +978,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>horizontalSlider_2</sender>
+   <sender>Midterm2_slider</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>spinBox_2</receiver>
+   <receiver>Midterm2_spinbox</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -994,9 +994,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>horizontalSlider_3</sender>
+   <sender>Final_slider</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>spinBox_3</receiver>
+   <receiver>Final_spinbox</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -1010,9 +1010,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>spinBox_3</sender>
+   <sender>Final_spinbox</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>horizontalSlider_3</receiver>
+   <receiver>Final_slider</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -1026,9 +1026,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>spinBox_2</sender>
+   <sender>Midterm2_spinbox</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>horizontalSlider_2</receiver>
+   <receiver>Midterm2_slider</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -1042,9 +1042,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>spinBox</sender>
+   <sender>Midterm1_spinbox</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>horizontalSlider</receiver>
+   <receiver>Midterm1_slider</receiver>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
