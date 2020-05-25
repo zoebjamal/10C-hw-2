@@ -70,7 +70,7 @@ void MainWindow::computeGrade() const {
     double h6 = static_cast<double>(hw6);
     double h7 = static_cast<double>(hw7);
     double h8 = static_cast<double>(hw8);
-    QString hwGrade(QString::number(.25 * (h1 + h2 + h3 + h4 + h5 + h6 + h7 + h8))); //math here is wrong
+    QString hwGrade(QString::number(((h1 + h2 + h3 + h4 + h5 + h6 + h7 + h8) / 8) * .25));
     ui->label_13->setText(hwGrade);
 }
 
