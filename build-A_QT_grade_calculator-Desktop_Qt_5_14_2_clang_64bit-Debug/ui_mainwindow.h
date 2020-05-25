@@ -31,7 +31,7 @@ public:
     QWidget *centralwidget;
     QLabel *label;
     QLabel *label_13;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QGridLayout *gridLayout;
     QSlider *HW5_slider;
     QLabel *label_7;
@@ -64,7 +64,7 @@ public:
     QSpinBox *HW6_spinbox;
     QSpinBox *HW7_spinbox;
     QSpinBox *HW8_spinbox;
-    QWidget *widget1;
+    QWidget *layoutWidget1;
     QGridLayout *gridLayout_2;
     QLabel *label_10;
     QSlider *Final_slider;
@@ -77,6 +77,7 @@ public:
     QSlider *Midterm1_slider;
     QSpinBox *Midterm1_spinbox;
     QSpinBox *Final_spinbox;
+    QLabel *label_14;
     QMenuBar *menubar;
     QMenu *menuA_QT_grade_calculator;
     QStatusBar *statusbar;
@@ -99,18 +100,19 @@ public:
         label->setFont(font);
         label_13 = new QLabel(centralwidget);
         label_13->setObjectName(QString::fromUtf8("label_13"));
-        label_13->setGeometry(QRect(340, 460, 221, 81));
-        widget = new QWidget(centralwidget);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(20, 50, 191, 501));
+        label_13->setGeometry(QRect(510, 450, 111, 41));
         QFont font1;
         font1.setFamily(QString::fromUtf8("Courier New"));
         font1.setPointSize(16);
-        widget->setFont(font1);
-        gridLayout = new QGridLayout(widget);
+        label_13->setFont(font1);
+        layoutWidget = new QWidget(centralwidget);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(20, 50, 191, 501));
+        layoutWidget->setFont(font1);
+        gridLayout = new QGridLayout(layoutWidget);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
-        HW5_slider = new QSlider(widget);
+        HW5_slider = new QSlider(layoutWidget);
         HW5_slider->setObjectName(QString::fromUtf8("HW5_slider"));
         HW5_slider->setFont(font1);
         HW5_slider->setMaximum(100);
@@ -118,13 +120,13 @@ public:
 
         gridLayout->addWidget(HW5_slider, 9, 1, 1, 1);
 
-        label_7 = new QLabel(widget);
+        label_7 = new QLabel(layoutWidget);
         label_7->setObjectName(QString::fromUtf8("label_7"));
         label_7->setFont(font1);
 
         gridLayout->addWidget(label_7, 11, 0, 1, 1);
 
-        HW3_slider = new QSlider(widget);
+        HW3_slider = new QSlider(layoutWidget);
         HW3_slider->setObjectName(QString::fromUtf8("HW3_slider"));
         HW3_slider->setFont(font1);
         HW3_slider->setMaximum(100);
@@ -136,7 +138,7 @@ public:
 
         gridLayout->addItem(verticalSpacer_3, 6, 1, 1, 1);
 
-        HW1_slider = new QSlider(widget);
+        HW1_slider = new QSlider(layoutWidget);
         HW1_slider->setObjectName(QString::fromUtf8("HW1_slider"));
         HW1_slider->setFont(font1);
         HW1_slider->setMaximum(100);
@@ -144,7 +146,7 @@ public:
 
         gridLayout->addWidget(HW1_slider, 0, 1, 1, 1);
 
-        HW7_slider = new QSlider(widget);
+        HW7_slider = new QSlider(layoutWidget);
         HW7_slider->setObjectName(QString::fromUtf8("HW7_slider"));
         HW7_slider->setFont(font1);
         HW7_slider->setMaximum(100);
@@ -152,13 +154,13 @@ public:
 
         gridLayout->addWidget(HW7_slider, 13, 1, 1, 1);
 
-        label_9 = new QLabel(widget);
+        label_9 = new QLabel(layoutWidget);
         label_9->setObjectName(QString::fromUtf8("label_9"));
         label_9->setFont(font1);
 
         gridLayout->addWidget(label_9, 15, 0, 1, 1);
 
-        label_3 = new QLabel(widget);
+        label_3 = new QLabel(layoutWidget);
         label_3->setObjectName(QString::fromUtf8("label_3"));
         label_3->setFont(font1);
 
@@ -168,7 +170,7 @@ public:
 
         gridLayout->addItem(verticalSpacer_5, 10, 1, 1, 1);
 
-        HW4_slider = new QSlider(widget);
+        HW4_slider = new QSlider(layoutWidget);
         HW4_slider->setObjectName(QString::fromUtf8("HW4_slider"));
         HW4_slider->setFont(font1);
         HW4_slider->setMaximum(100);
@@ -176,13 +178,13 @@ public:
 
         gridLayout->addWidget(HW4_slider, 7, 1, 1, 1);
 
-        label_6 = new QLabel(widget);
+        label_6 = new QLabel(layoutWidget);
         label_6->setObjectName(QString::fromUtf8("label_6"));
         label_6->setFont(font1);
 
         gridLayout->addWidget(label_6, 9, 0, 1, 1);
 
-        HW2_slider = new QSlider(widget);
+        HW2_slider = new QSlider(layoutWidget);
         HW2_slider->setObjectName(QString::fromUtf8("HW2_slider"));
         HW2_slider->setFont(font1);
         HW2_slider->setMaximum(100);
@@ -190,13 +192,13 @@ public:
 
         gridLayout->addWidget(HW2_slider, 3, 1, 1, 1);
 
-        label_2 = new QLabel(widget);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setFont(font1);
 
         gridLayout->addWidget(label_2, 0, 0, 1, 1);
 
-        label_4 = new QLabel(widget);
+        label_4 = new QLabel(layoutWidget);
         label_4->setObjectName(QString::fromUtf8("label_4"));
         label_4->setFont(font1);
 
@@ -206,7 +208,7 @@ public:
 
         gridLayout->addItem(verticalSpacer_7, 14, 1, 1, 1);
 
-        HW6_slider = new QSlider(widget);
+        HW6_slider = new QSlider(layoutWidget);
         HW6_slider->setObjectName(QString::fromUtf8("HW6_slider"));
         HW6_slider->setFont(font1);
         HW6_slider->setMaximum(100);
@@ -214,7 +216,7 @@ public:
 
         gridLayout->addWidget(HW6_slider, 11, 1, 1, 1);
 
-        label_8 = new QLabel(widget);
+        label_8 = new QLabel(layoutWidget);
         label_8->setObjectName(QString::fromUtf8("label_8"));
         label_8->setFont(font1);
 
@@ -228,7 +230,7 @@ public:
 
         gridLayout->addItem(verticalSpacer_4, 8, 1, 1, 1);
 
-        label_5 = new QLabel(widget);
+        label_5 = new QLabel(layoutWidget);
         label_5->setObjectName(QString::fromUtf8("label_5"));
         label_5->setFont(font1);
 
@@ -238,7 +240,7 @@ public:
 
         gridLayout->addItem(verticalSpacer_2, 4, 1, 1, 1);
 
-        HW8_slider = new QSlider(widget);
+        HW8_slider = new QSlider(layoutWidget);
         HW8_slider->setObjectName(QString::fromUtf8("HW8_slider"));
         HW8_slider->setFont(font1);
         HW8_slider->setMaximum(100);
@@ -250,75 +252,75 @@ public:
 
         gridLayout->addItem(verticalSpacer_6, 12, 1, 1, 1);
 
-        HW1_spinbox = new QSpinBox(widget);
+        HW1_spinbox = new QSpinBox(layoutWidget);
         HW1_spinbox->setObjectName(QString::fromUtf8("HW1_spinbox"));
         HW1_spinbox->setFont(font1);
         HW1_spinbox->setMaximum(100);
 
         gridLayout->addWidget(HW1_spinbox, 0, 2, 1, 1);
 
-        HW2_spinbox = new QSpinBox(widget);
+        HW2_spinbox = new QSpinBox(layoutWidget);
         HW2_spinbox->setObjectName(QString::fromUtf8("HW2_spinbox"));
         HW2_spinbox->setFont(font1);
         HW2_spinbox->setMaximum(100);
 
         gridLayout->addWidget(HW2_spinbox, 3, 2, 1, 1);
 
-        HW3_spinbox = new QSpinBox(widget);
+        HW3_spinbox = new QSpinBox(layoutWidget);
         HW3_spinbox->setObjectName(QString::fromUtf8("HW3_spinbox"));
         HW3_spinbox->setFont(font1);
         HW3_spinbox->setMaximum(100);
 
         gridLayout->addWidget(HW3_spinbox, 5, 2, 1, 1);
 
-        HW4_spinbox = new QSpinBox(widget);
+        HW4_spinbox = new QSpinBox(layoutWidget);
         HW4_spinbox->setObjectName(QString::fromUtf8("HW4_spinbox"));
         HW4_spinbox->setFont(font1);
         HW4_spinbox->setMaximum(100);
 
         gridLayout->addWidget(HW4_spinbox, 7, 2, 1, 1);
 
-        HW5_spinbox = new QSpinBox(widget);
+        HW5_spinbox = new QSpinBox(layoutWidget);
         HW5_spinbox->setObjectName(QString::fromUtf8("HW5_spinbox"));
         HW5_spinbox->setFont(font1);
         HW5_spinbox->setMaximum(100);
 
         gridLayout->addWidget(HW5_spinbox, 9, 2, 1, 1);
 
-        HW6_spinbox = new QSpinBox(widget);
+        HW6_spinbox = new QSpinBox(layoutWidget);
         HW6_spinbox->setObjectName(QString::fromUtf8("HW6_spinbox"));
         HW6_spinbox->setFont(font1);
         HW6_spinbox->setMaximum(100);
 
         gridLayout->addWidget(HW6_spinbox, 11, 2, 1, 1);
 
-        HW7_spinbox = new QSpinBox(widget);
+        HW7_spinbox = new QSpinBox(layoutWidget);
         HW7_spinbox->setObjectName(QString::fromUtf8("HW7_spinbox"));
         HW7_spinbox->setFont(font1);
         HW7_spinbox->setMaximum(100);
 
         gridLayout->addWidget(HW7_spinbox, 13, 2, 1, 1);
 
-        HW8_spinbox = new QSpinBox(widget);
+        HW8_spinbox = new QSpinBox(layoutWidget);
         HW8_spinbox->setObjectName(QString::fromUtf8("HW8_spinbox"));
         HW8_spinbox->setFont(font1);
         HW8_spinbox->setMaximum(100);
 
         gridLayout->addWidget(HW8_spinbox, 15, 2, 1, 1);
 
-        widget1 = new QWidget(centralwidget);
-        widget1->setObjectName(QString::fromUtf8("widget1"));
-        widget1->setGeometry(QRect(340, 50, 241, 325));
-        gridLayout_2 = new QGridLayout(widget1);
+        layoutWidget1 = new QWidget(centralwidget);
+        layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(340, 50, 241, 325));
+        gridLayout_2 = new QGridLayout(layoutWidget1);
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
         gridLayout_2->setContentsMargins(0, 0, 0, 0);
-        label_10 = new QLabel(widget1);
+        label_10 = new QLabel(layoutWidget1);
         label_10->setObjectName(QString::fromUtf8("label_10"));
         label_10->setFont(font1);
 
         gridLayout_2->addWidget(label_10, 0, 0, 1, 1);
 
-        Final_slider = new QSlider(widget1);
+        Final_slider = new QSlider(layoutWidget1);
         Final_slider->setObjectName(QString::fromUtf8("Final_slider"));
         Final_slider->setFont(font1);
         Final_slider->setMaximum(100);
@@ -334,25 +336,25 @@ public:
 
         gridLayout_2->addItem(verticalSpacer_8, 3, 0, 1, 1);
 
-        label_11 = new QLabel(widget1);
+        label_11 = new QLabel(layoutWidget1);
         label_11->setObjectName(QString::fromUtf8("label_11"));
         label_11->setFont(font1);
 
         gridLayout_2->addWidget(label_11, 4, 0, 1, 1);
 
-        label_12 = new QLabel(widget1);
+        label_12 = new QLabel(layoutWidget1);
         label_12->setObjectName(QString::fromUtf8("label_12"));
         label_12->setFont(font1);
 
         gridLayout_2->addWidget(label_12, 8, 0, 1, 1);
 
-        Midterm2_spinbox = new QSpinBox(widget1);
+        Midterm2_spinbox = new QSpinBox(layoutWidget1);
         Midterm2_spinbox->setObjectName(QString::fromUtf8("Midterm2_spinbox"));
         Midterm2_spinbox->setMaximum(100);
 
         gridLayout_2->addWidget(Midterm2_spinbox, 6, 0, 1, 1);
 
-        Midterm2_slider = new QSlider(widget1);
+        Midterm2_slider = new QSlider(layoutWidget1);
         Midterm2_slider->setObjectName(QString::fromUtf8("Midterm2_slider"));
         Midterm2_slider->setFont(font1);
         Midterm2_slider->setMaximum(100);
@@ -360,7 +362,7 @@ public:
 
         gridLayout_2->addWidget(Midterm2_slider, 5, 0, 1, 1);
 
-        Midterm1_slider = new QSlider(widget1);
+        Midterm1_slider = new QSlider(layoutWidget1);
         Midterm1_slider->setObjectName(QString::fromUtf8("Midterm1_slider"));
         Midterm1_slider->setFont(font1);
         Midterm1_slider->setMaximum(100);
@@ -368,18 +370,22 @@ public:
 
         gridLayout_2->addWidget(Midterm1_slider, 1, 0, 1, 1);
 
-        Midterm1_spinbox = new QSpinBox(widget1);
+        Midterm1_spinbox = new QSpinBox(layoutWidget1);
         Midterm1_spinbox->setObjectName(QString::fromUtf8("Midterm1_spinbox"));
         Midterm1_spinbox->setMaximum(100);
 
         gridLayout_2->addWidget(Midterm1_spinbox, 2, 0, 1, 1);
 
-        Final_spinbox = new QSpinBox(widget1);
+        Final_spinbox = new QSpinBox(layoutWidget1);
         Final_spinbox->setObjectName(QString::fromUtf8("Final_spinbox"));
         Final_spinbox->setMaximum(100);
 
         gridLayout_2->addWidget(Final_spinbox, 10, 0, 1, 1);
 
+        label_14 = new QLabel(centralwidget);
+        label_14->setObjectName(QString::fromUtf8("label_14"));
+        label_14->setGeometry(QRect(320, 460, 141, 20));
+        label_14->setFont(font1);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -437,6 +443,7 @@ public:
         label_10->setText(QCoreApplication::translate("MainWindow", "Midterm 1", nullptr));
         label_11->setText(QCoreApplication::translate("MainWindow", "Midterm 2", nullptr));
         label_12->setText(QCoreApplication::translate("MainWindow", "Final", nullptr));
+        label_14->setText(QCoreApplication::translate("MainWindow", "Overall Score: ", nullptr));
         menuA_QT_grade_calculator->setTitle(QCoreApplication::translate("MainWindow", "A QT grade calculator", nullptr));
     } // retranslateUi
 
