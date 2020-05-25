@@ -74,3 +74,5 @@ void MainWindow::computeGrade() const {
     ui->label_13->setText(hwGrade);
 }
 
+//test commit
+
