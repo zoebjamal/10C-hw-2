@@ -78,6 +78,16 @@ void MainWindow::get_final(int value) {
     computeGrade();
     return;
 }
+void MainWindow::on_radioButton_clicked() {
+    schema_a = true;
+    computeGrade();
+    return;
+}
+void MainWindow::on_radioButton_2_clicked() {
+    schema_b = true;
+    computeGrade();
+    return;
+}
 
 void MainWindow::computeGrade() const {
     double h1 = static_cast<double>(hw1);
@@ -101,15 +111,15 @@ void MainWindow::computeGrade() const {
     }
     QString Schema_A(QString::number((((h1 + h2 + h3 + h4 + h5 + h6 + h7 + h8) / 8) * .25) + (.2 * m1) + (.2 * m2) + (.35 * fin)));
     QString Schema_B(QString::number((((h1 + h2 + h3 + h4 + h5 + h6 + h7 + h8) / 8) * .25) + (.3 * highest_mt) + (.44 * fin)));
-    if (Schema_A > Schema_B) {
+    if (schema_a) {
         ui->label_13->setText(Schema_A);
-    } else if (Schema_B > Schema_A) {
+    }
+    if (schema_b) {
         ui->label_13->setText(Schema_B);
-    } else if (Schema_A == Schema_B) {
-        ui->label_13->setText(Schema_A);
     }
 }
 
 
 //Note: the "bug" where schema B gives 99 as max score is due to the grading split not actually adding up to 100
 //there is also an ugly logic error somewhere - prog is confused when choosing between schemas
+//update: the above issue has been fixed by adding conditions, but there is a small issue where you can't keep changing between schemas.

@@ -26,6 +26,9 @@ private slots:
     void get_mt1(int);
     void get_mt2(int);
     void get_final(int);
+    void on_radioButton_clicked();
+    void on_radioButton_2_clicked();
+
 private:
     void computeGrade() const;
 private:
@@ -41,5 +44,7 @@ private:
     int mt1;
     int mt2;
     int final;
+    bool schema_a;
+    bool schema_b;
 };
 #endif // MAINWINDOW_H
