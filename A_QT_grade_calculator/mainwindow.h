@@ -23,6 +23,9 @@ private slots:
     void get_hw6(int);
     void get_hw7(int);
     void get_hw8(int);
+    void get_mt1(int);
+    void get_mt2(int);
+    void get_final(int);
 private:
     void computeGrade() const;
 private:
@@ -35,5 +38,8 @@ private:
     int hw6;
     int hw7;
     int hw8;
+    int mt1;
+    int mt2;
+    int final;
 };
 #endif // MAINWINDOW_H

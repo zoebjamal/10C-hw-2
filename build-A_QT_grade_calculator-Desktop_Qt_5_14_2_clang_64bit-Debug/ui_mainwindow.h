@@ -17,6 +17,7 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QRadioButton>
 #include <QtWidgets/QSlider>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QSpinBox>
@@ -78,6 +79,8 @@ public:
     QSpinBox *Midterm1_spinbox;
     QSpinBox *Final_spinbox;
     QLabel *label_14;
+    QRadioButton *radioButton;
+    QRadioButton *radioButton_2;
     QMenuBar *menubar;
     QMenu *menuA_QT_grade_calculator;
     QStatusBar *statusbar;
@@ -100,7 +103,7 @@ public:
         label->setFont(font);
         label_13 = new QLabel(centralwidget);
         label_13->setObjectName(QString::fromUtf8("label_13"));
-        label_13->setGeometry(QRect(510, 450, 111, 41));
+        label_13->setGeometry(QRect(510, 470, 111, 41));
         QFont font1;
         font1.setFamily(QString::fromUtf8("Courier New"));
         font1.setPointSize(16);
@@ -384,8 +387,14 @@ public:
 
         label_14 = new QLabel(centralwidget);
         label_14->setObjectName(QString::fromUtf8("label_14"));
-        label_14->setGeometry(QRect(320, 460, 141, 20));
+        label_14->setGeometry(QRect(330, 480, 141, 20));
         label_14->setFont(font1);
+        radioButton = new QRadioButton(centralwidget);
+        radioButton->setObjectName(QString::fromUtf8("radioButton"));
+        radioButton->setGeometry(QRect(330, 410, 100, 22));
+        radioButton_2 = new QRadioButton(centralwidget);
+        radioButton_2->setObjectName(QString::fromUtf8("radioButton_2"));
+        radioButton_2->setGeometry(QRect(330, 440, 100, 22));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -444,6 +453,8 @@ public:
         label_11->setText(QCoreApplication::translate("MainWindow", "Midterm 2", nullptr));
         label_12->setText(QCoreApplication::translate("MainWindow", "Final", nullptr));
         label_14->setText(QCoreApplication::translate("MainWindow", "Overall Score: ", nullptr));
+        radioButton->setText(QCoreApplication::translate("MainWindow", "Schema A", nullptr));
+        radioButton_2->setText(QCoreApplication::translate("MainWindow", "Schema B", nullptr));
         menuA_QT_grade_calculator->setTitle(QCoreApplication::translate("MainWindow", "A QT grade calculator", nullptr));
     } // retranslateUi
 

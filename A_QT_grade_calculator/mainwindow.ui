@@ -39,7 +39,7 @@
     <property name="geometry">
      <rect>
       <x>510</x>
-      <y>450</y>
+      <y>470</y>
       <width>111</width>
       <height>41</height>
      </rect>
@@ -690,8 +690,8 @@
    <widget class="QLabel" name="label_14">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>460</y>
+      <x>330</x>
+      <y>480</y>
       <width>141</width>
       <height>20</height>
      </rect>
@@ -704,6 +704,32 @@
     </property>
     <property name="text">
      <string>Overall Score: </string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>410</y>
+      <width>100</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Schema A</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_2">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>440</y>
+      <width>100</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Schema B</string>
     </property>
    </widget>
   </widget>
