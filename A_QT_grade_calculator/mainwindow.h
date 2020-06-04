@@ -44,7 +44,5 @@ private:
     int mt1;
     int mt2;
     int final;
-    bool schema_a;
-    bool schema_b;
 };
 #endif // MAINWINDOW_H

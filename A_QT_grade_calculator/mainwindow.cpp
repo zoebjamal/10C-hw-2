@@ -5,6 +5,8 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow), hw1(0), hw2(0), hw3(0), hw4(0), hw5(0), hw6(0), hw7(0), hw8(0)
 {
     ui->setupUi(this);
+    ui->radioButton->setChecked(true);
+    ui->radioButton_2->setChecked(false);
     QObject::connect(ui->HW1_spinbox, SIGNAL(valueChanged(int)), this, SLOT(get_hw1(int)));
     QObject::connect(ui->HW2_spinbox, SIGNAL(valueChanged(int)), this, SLOT(get_hw2(int)));
     QObject::connect(ui->HW3_spinbox, SIGNAL(valueChanged(int)), this, SLOT(get_hw3(int)));
@@ -16,6 +18,8 @@ MainWindow::MainWindow(QWidget *parent)
     QObject::connect(ui->Midterm1_spinbox, SIGNAL(valueChanged(int)), this, SLOT(get_mt1(int)));
     QObject::connect(ui->Midterm2_spinbox, SIGNAL(valueChanged(int)), this, SLOT(get_mt2(int)));
     QObject::connect(ui->Final_spinbox, SIGNAL(valueChanged(int)), this, SLOT(get_final(int)));
+    QObject::connect(ui->radioButton, SIGNAL( clicked() ),this, SLOT(on_radioButton_clicked()));
+    QObject::connect(ui->radioButton_2, SIGNAL( clicked() ),this, SLOT(on_radioButton_2_clicked()));
 }
 
 MainWindow::~MainWindow()
@@ -78,16 +82,16 @@ void MainWindow::get_final(int value) {
     computeGrade();
     return;
 }
+
 void MainWindow::on_radioButton_clicked() {
-    schema_a = true;
     computeGrade();
     return;
 }
 void MainWindow::on_radioButton_2_clicked() {
-    schema_b = true;
     computeGrade();
     return;
 }
+
 
 void MainWindow::computeGrade() const {
     double h1 = static_cast<double>(hw1);
@@ -109,17 +113,18 @@ void MainWindow::computeGrade() const {
     } else if (m1 == m2) {
         highest_mt = m1;
     }
-    QString Schema_A(QString::number((((h1 + h2 + h3 + h4 + h5 + h6 + h7 + h8) / 8) * .25) + (.2 * m1) + (.2 * m2) + (.35 * fin)));
-    QString Schema_B(QString::number((((h1 + h2 + h3 + h4 + h5 + h6 + h7 + h8) / 8) * .25) + (.3 * highest_mt) + (.44 * fin)));
-    if (schema_a) {
+    if (ui->radioButton->isChecked()) {
+        QString Schema_A(QString::number((((h1 + h2 + h3 + h4 + h5 + h6 + h7 + h8) / 8) * .25) + (.2 * m1) + (.2 * m2) + (.35 * fin)));
         ui->label_13->setText(Schema_A);
-    }
-    if (schema_b) {
+    } else if (ui->radioButton_2->isChecked()) {
+        QString Schema_B(QString::number((((h1 + h2 + h3 + h4 + h5 + h6 + h7 + h8) / 8) * .25) + (.3 * highest_mt) + (.44 * fin)));
         ui->label_13->setText(Schema_B);
+    } else {
+        computeGrade();
     }
 }
-
 
 //Note: the "bug" where schema B gives 99 as max score is due to the grading split not actually adding up to 100
 //there is also an ugly logic error somewhere - prog is confused when choosing between schemas
 //update: the above issue has been fixed by adding conditions, but there is a small issue where you can't keep changing between schemas.
+//update: changed the logic slightly to eliminate this error
